@@ -30,7 +30,7 @@ jobs:
           pip install pytest pytest-cov
 
       - name: Run tests with coverage
-        run: pytest ./AutoParts/tests --cov=AutoParts --cov-report=xml
+        run: pytest ./test --cov=AutoParts --cov-report=xml
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
